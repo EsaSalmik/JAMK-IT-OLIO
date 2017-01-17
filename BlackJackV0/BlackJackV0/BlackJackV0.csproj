@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BlackJack.cs" />
+    <Compile Include="IkkunaLaskin.cs" />
     <Compile Include="LottoFI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
