@@ -24,7 +24,8 @@ namespace olio1
     {
         static void Main(string[] args)
         {
-            valikko();
+            tehtava7();
+            //valikko();
         }
         static void valikko()
         {
@@ -32,17 +33,25 @@ namespace olio1
             int valinta = 111;
             while (valinta != 0)
             {
-                Console.WriteLine("1. SayHello() \n");
-                Console.WriteLine("2. AksAge() \n");
-                Console.WriteLine("3. kayttajat() \n");
-                Console.WriteLine("4. arvonta() \n");
-                Console.WriteLine("5. tehtava1() \n"); 
-                Console.WriteLine("0. Lopeta \n");
-                Console.WriteLine("Valitse ohjelma 1-4: ");
+                Console.WriteLine("1. SayHello() ");
+                Console.WriteLine("2. AksAge() ");
+                Console.WriteLine("3. kayttajat() ");
+                Console.WriteLine("4. arvonta() ");
+                Console.WriteLine("5. tehtava1() ");
+                Console.WriteLine("6. tehtava2() ");
+                Console.WriteLine("7. tehtava3() ");
+                Console.WriteLine("8. tehtava4() ");
+                Console.WriteLine("9. tehtava5() ");
+                Console.WriteLine("0. Lopeta ");
+                Console.WriteLine("Valitse ohjelma: ");
                 string syote = Console.ReadLine();
                 valinta = int.Parse(syote);
 
-                if (valinta == 1)
+                if (valinta == 0)
+                {
+                    
+                }
+                else if (valinta == 1)
                 {
                     SayHello();
                 }
@@ -62,11 +71,27 @@ namespace olio1
                 {
                     tehtava1();
                 }
+                else if (valinta == 6)
+                {
+                    tehtava2();
+                }
+                else if (valinta == 7)
+                {
+                    tehtava3();
+                }
+                else if (valinta == 8)
+                {
+                    tehtava4();
+                }
+                else if (valinta == 9)
+                {
+                    tehtava5();
+                }
                 else
                 {
-                    Console.WriteLine("Valitse ohjelma 1-4.");
+                    valikko();
                 }
-                Console.ReadLine();
+                
             }
         }
         static void SayHello()
@@ -249,7 +274,99 @@ namespace olio1
         }
         static void tehtava4 ()
         {
+            Console.WriteLine("Minka ikainen olet?:");
+            string syote = Console.ReadLine();
+            int ika = int.Parse(syote);
+            if (ika < 18)
+            {
+                Console.WriteLine("Olet alaikainen.");
+            } else if (ika > 17 && ika < 66) {
+                Console.WriteLine("Olet aikuinen.");
+            } else if (ika > 65)
+            {
+                Console.WriteLine("Olet seniori.");
+            } else
+            {
+                tehtava4();
+            }
+            Console.ReadLine();
+            valikko();
+        }
+        static void tehtava5()
+        {
+            Console.Write("Anna sekunnit > ");
+            string syote = Console.ReadLine();
+            int sekunnit = int.Parse(syote);
+
+            int tunnit = sekunnit / 3600;
+            int minuutit = sekunnit / 60 / 60;
+            int sek = minuutit / 60;
+
+            Console.WriteLine("Antamasi sekunttiaika voidaan ilmaista muodossa: " + tunnit + " tunti " + minuutit + " minuutti " + sek + " sekuntti");
+            Console.ReadLine();
+            valikko();
+        }
+        static void tehtava6()
+        {
+            Console.Write("Anna ajokilometrit > ");
+            string syote = Console.ReadLine();
+            int km = int.Parse(syote);
+            Double bensa = km * 0.0702;
+            Double menot = bensa * 1.595;
+
+            Console.WriteLine("Bensa kulutus: " + bensa);
+            Console.WriteLine("Menot: " + menot + " euroa.");
 
         }
+        static void tehtava7()
+        {
+            Console.Write("Anna vuosiluku > ");
+            string syote = Console.ReadLine();
+            int vuosi = int.Parse(syote);
+
+            int karkausvuosi = vuosi % 4;
+
+            if (karkausvuosi == 0) {
+                if (vuosi % 400 == 0)
+                {
+                    Console.Write("Vuosiluku: " + vuosi + " on karkausvuosi");
+                } else if (vuosi % 100 == 0)
+                {
+                    Console.Write("Vuosiluku: " + vuosi + " ei ole karkausvuosi");
+                }
+
+            } else
+            {
+                Console.Write("Vuosiluku: " + vuosi + " ei ole karkausvuosi");
+            }
+        }
+        static void tehtava8(string[] args)
+        {
+                int number;
+                int numbers = 3;
+                int biggest = 0;
+
+                for (int i = 1; i <= numbers; i++)
+                {
+                    Console.Write("Give a number: ");
+                    string line = Console.ReadLine();
+                    bool result = Int32.TryParse(line, out number);
+                    if (result)
+                    {
+                        if (i == 1) biggest = number;
+                        else if (number > biggest) biggest = number;
+                    }
+                    else
+                    {
+                        Console.WriteLine("You don't give a number!");
+                    }
+                }
+                Console.WriteLine("The biggest number is " + biggest);
+                Console.ReadLine();
+
+
+            }
+
+
     }
 }
