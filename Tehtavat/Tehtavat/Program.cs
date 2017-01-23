@@ -214,6 +214,7 @@ namespace olio1
                 Console.WriteLine("Anna luku 1-3 > ");
             }
             Console.ReadLine();
+            valikko();
         }
         static void tehtava2 ()
         {
@@ -250,6 +251,7 @@ namespace olio1
                 Console.WriteLine("Anna pistemäärä 0-12 > ");
             }
             Console.ReadLine();
+            valikko();
         }
         static void tehtava3 ()
         {
@@ -316,7 +318,8 @@ namespace olio1
 
             Console.WriteLine("Bensa kulutus: " + bensa);
             Console.WriteLine("Menot: " + menot + " euroa.");
-
+            Console.ReadLine();
+            valikko();
         }
         static void tehtava7()
         {
@@ -339,34 +342,255 @@ namespace olio1
             {
                 Console.Write("Vuosiluku: " + vuosi + " ei ole karkausvuosi");
             }
+            Console.ReadLine();
+            valikko();
         }
-        static void tehtava8(string[] args)
-        {
-                int number;
-                int numbers = 3;
-                int biggest = 0;
-
-                for (int i = 1; i <= numbers; i++)
+        static void tehtava8() {
+                int[] array = new int[3];
+                Console.WriteLine("Syota 3 numeroa: ");
+                for (int i = 0; i < 3; i++)
                 {
-                    Console.Write("Give a number: ");
-                    string line = Console.ReadLine();
-                    bool result = Int32.TryParse(line, out number);
-                    if (result)
-                    {
-                        if (i == 1) biggest = number;
-                        else if (number > biggest) biggest = number;
-                    }
-                    else
-                    {
-                        Console.WriteLine("You don't give a number!");
-                    }
+                    array[i] = Convert.ToInt32(Console.ReadLine());
                 }
-                Console.WriteLine("The biggest number is " + biggest);
+                Array.Sort(array);
+                Array.Reverse(array);
+                Console.WriteLine("Suurin numero on: " + array[0];
                 Console.ReadLine();
-
-
+                valikko();
+        }
+        static void tehtava9() {
+                int summa = 0;
+                do {
+                    Console.WriteLine("Syota numero: ");
+                    string syote = Console.ReadLine();
+                    int numero = int.Parse(syote);
+                    summa = summa + numero;
+                } while (numero != 0)
+                Console.WriteLine("Lukujen summa on " + summa);
+                Console.ReadLine();
+                valikko();
+        }
+        static void tehtava10() {
+            int[] taulukko = new int[9] {1,2,33,44,55,68,77,96,100}
+            for (int b = 0; b < taulukko.Length; b++) {
+                    Console.Write(taulukko[b]);
+                    if (taulukko[b] % 2 == 0 ) { Console.Write("HEP"); }
             }
+            Console.ReadLine();
+            valikko();
+        }
+        static void tehtava11 () {
+            Console.WriteLine("Syota numero: ");
+            string syote = Console.ReadLine();
+            int numero = int.Parse(syote);
+            for (int i = 0; i =< numero; i++) {
+                for (int a = 0; a = i; i++) {
+                    Console.Writeline("*");
+                }
+            }
+            Console.ReadLine();
+            valikko();
+        }
 
+        static void tehtava12() {
+            lukuja = 5;
+            int[] array = new int[lukuja];
+            for (int i = 0; i < lukuja; i++)
+            {
+                Console.WriteLine("Anna luku > ");
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Array.Reverse(array);
+            foreach (string k in array)
+            {
+                Console.Write("Luvut ovat: " + k + ", ");
+            }
+            Console.ReadLine();
+            valikko();
+        }
+        static void tehtava13() {
+            lukuja = 5;
+            summa = 0;
+            int size = array.Length;
 
+            int[] array = new int[lukuja];
+            for (int i = 0; i < lukuja; i++)
+            {
+                Console.WriteLine("Anna pisteet > ");
+                array[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Array.Sort(array);
+
+            for (int i = 0; i < size; i++)
+            {
+                summa += array[i];
+            }
+            summa = summa - array[0] - array[4];
+            Console.WriteLine("Kokonaispisteet ovat " + summa);
+            Console.ReadLine();
+            valikko();
+        }
+        static void tehtava14() {
+            int opiskelijoita = 8;
+            int arvosana0 = 0;
+            int arvosana1 = 0;
+            int arvosana2 = 0;
+            int arvosana3 = 0;
+            int arvosana4 = 0;
+            int arvosana5 = 0;
+
+            for (int i = 0; i < opiskelijoita; i++)
+            {
+                Console.WriteLine("Anna arvosana > ");
+                string syote = Console.ReadLine();
+                int numero = int.Parse(syote);
+                if (numero == 0) {
+                    arvosana0 = arvosana0 + 1;
+                } else if (numero == 1) {
+                    arvosana1 = arvosana1 + 1;
+                } else if (numero == 2) {
+                    arvosana2 = arvosana2 + 1;
+                } else if (numero == 3) {
+                    arvosana3 = arvosana3 + 1;
+                } else if (numero == 4) {
+                    arvosana4 = arvosana4 + 1;
+                } else if (numero == 5) {
+                    arvosana5 = arvosana5 + 1;
+                }
+            }
+            Console.WriteLine("Arvosanat:");
+            Console.WriteLine("0:");
+            for (int i = 0; i < arvosana0; i++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine("1:");
+            for (int i = 0; i < arvosana1; i++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine("2:");
+            for (int i = 0; i < arvosana2; i++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine("3:");
+            for (int i = 0; i < arvosana3; i++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine("4:");
+            for (int i = 0; i < arvosana4; i++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine("5:");
+            for (int i = 0; i < arvosana5; i++)
+            {
+                Console.Write("*");
+            }
+            Console.ReadLine();
+            valikko();
+        }
+        static void tehtava15() {
+            Console.WriteLine("Anna luku > ");
+            string syote = Console.ReadLine();
+            int numero = int.Parse(syote);
+            int puu = numero - 2;
+            jalka = 2;
+
+            for (int i = 0; i < puu; i++)
+                {
+                    int vali = puu - i;
+                    for (int a = 0; a <= vali; a++)
+                    {
+                        Console.Write(" ");
+                    }
+                    for (int tahti = 0; tahti <= i * 2; star++)
+                    {
+                        Console.Write("*");
+                    }
+                    Console.WriteLine();
+                }
+                for (int i = 0; i < jalka; i++)
+                {
+                    for (int a = 0; a <= puu; a++)
+                    {
+                        Console.Write(" ");
+                    }
+                    Console.WriteLine("*");
+                }
+                Console.ReadLine();
+                valikko();
+        }
+        static void tehtava16() {
+            Random rand = new Random();
+            int random = rand.Next(1, 101);
+            Console.WriteLine("Arvaa luku > ");
+            string syote = Console.ReadLine();
+            int arvottu = int.Parse(syote);
+            arvauksia = 0;
+            while(random != arvottu) {
+                arvauksia++;
+                if (arvottu > random) {
+                    Console.WriteLine("Numero on pienempi ");
+                } else if (arvottu < random) {
+                    Console.WriteLine("Numero on suurempi ");
+                } 
+            } 
+            Console.WriteLine("Hienoa, arvasit luvun " + arvauksia + " kerralla.");
+            Console.ReadLine();
+            valikko();
+        }
+        static void tehtava17() {
+            int[] taulukko1 = new int[5] {10,20,30,40,50}
+            int[] taulukko2 = new int[5] {5,15,25,35,45}
+            int[] yhdistettytaulukko = new int[10];
+            yhdistettytaulukko = taulukko1 + taulukko2;
+            Array.Sort(yhdistettytaulukko);
+            int size = yhdistettytaulukko.Length;
+            Console.WriteLine("Luvut yhdistetyssä taulukossa : ");
+            for (int i = 0; i < size; i++)
+            {
+                Console.Write(yhdistettytaulukko[i] + ",");
+            }
+            Console.ReadLine();
+            valikko();
+        }
+        static void tehtava18() {
+            Console.Write("Kirjoita joku lause : ");
+            string lause = Console.ReadLine();
+            int pituus = line.Length;
+
+            for (int i = 0; i < pituus / 2; i++)
+            {
+                if (lause[i] != lause[pituus - i - 1])
+                {
+                    Console.WriteLine("Lause ei ole palidromi.");
+                } else {
+                    Console.WriteLine("Lause on palidromi.");
+                }
+            }
+            Console.ReadLine();
+            valikko();
+        }
+        static void tehtava19() {
+            string sana = "opiskelija";
+            int pituus = line.length;
+            string arvattu;
+                
+            for (int i = 0; i < pituus; i++) {
+                Console.WriteLine("Arvaa seuraava kirjain");
+                char kirjain = Console.ReadLine();
+                if (kirjain == sana[i]) {
+                    arvattu = arvattu + sana[i];
+                    ConsoleWrite(arvattu);
+                }
+            }
+            Console.WriteLine("Arvaa uksesi oli: " + arvattu);
+            Console.WriteLine("Oikea sana on: " + sana);
+            Console.ReadLine();
+            valikko();
+        }
     }
 }
