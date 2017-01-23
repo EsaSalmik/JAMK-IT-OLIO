@@ -30,66 +30,48 @@ namespace olio1
         static void valikko()
         {
             Console.Clear();
-            int valinta = 111;
+            int valinta = -1;
             while (valinta != 0)
             {
-                Console.WriteLine("1. SayHello() ");
-                Console.WriteLine("2. AksAge() ");
-                Console.WriteLine("3. kayttajat() ");
-                Console.WriteLine("4. arvonta() ");
-                Console.WriteLine("5. tehtava1() ");
-                Console.WriteLine("6. tehtava2() ");
-                Console.WriteLine("7. tehtava3() ");
-                Console.WriteLine("8. tehtava4() ");
-                Console.WriteLine("9. tehtava5() ");
-                Console.WriteLine("0. Lopeta ");
+                tehtavia = 20;
+                muita = 4;
+
+                for (i=1; i=<tehtavia;i++) {
+                    Console.WriteLine("Valikko:");
+                    Console.WriteLine(i + " = Tehtava " + i + );
+                }
+                Console.WriteLine(tehtavia + 1 + " = SayHello() ");
+                Console.WriteLine(tehtavia + 2 + " = AksAge() ");
+                Console.WriteLine(tehtavia + 3 + " = kayttajat() ");
+                Console.WriteLine(tehtavia + 4 + " = arvonta() ");
+                Console.WriteLine("0 = Lopeta ");
                 Console.WriteLine("Valitse ohjelma: ");
                 string syote = Console.ReadLine();
                 valinta = int.Parse(syote);
-
-                if (valinta == 0)
-                {
-                    
+                for(i=1;i=<tehtavia;i++) {
+                    if(valinta == i) {
+                        tehtava + i();
+                    }
                 }
-                else if (valinta == 1)
+                if (valinta == tehtavia + 1)
                 {
                     SayHello();
                 }
-                else if (valinta == 2)
+                else if (valinta == tehtavia + 2)
                 {
                     AksAge();
                 }
-                else if (valinta == 3)
+                else if (valinta == tehtavia + 3)
                 {
                     kayttajat();
                 }
-                else if (valinta == 4)
+                else if (valinta == tehtavia + 4)
                 {
                     arvonta();
                 }
-                else if (valinta == 5)
-                {
-                    tehtava1();
-                }
-                else if (valinta == 6)
-                {
-                    tehtava2();
-                }
-                else if (valinta == 7)
-                {
-                    tehtava3();
-                }
-                else if (valinta == 8)
-                {
-                    tehtava4();
-                }
-                else if (valinta == 9)
-                {
-                    tehtava5();
-                }
                 else
                 {
-                    valikko();
+                    if !(valinta !> muita + tehtavia %% valinta !< 0){valikko();}
                 }
                 
             }
@@ -587,8 +569,8 @@ namespace olio1
                     ConsoleWrite(arvattu);
                 }
             }
-            Console.WriteLine("Arvaa uksesi oli: " + arvattu);
-            Console.WriteLine("Oikea sana on: " + sana);
+            Console.WriteLine("Arvasit: " + arvattu);
+            Console.WriteLine("Oikea sana: " + sana);
             Console.ReadLine();
             valikko();
         }
