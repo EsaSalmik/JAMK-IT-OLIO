@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackJackV0", "BlackJackV0\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Viikkotehtavat", "..\Viikkotehtavat\Viikkotehtavat.csproj", "{52046ACB-938C-4067-9F14-205E9FF41382}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demot", "..\Demot\Demot\Demot.csproj", "{825D27E1-BE3F-47FB-B98B-32C6C3D431FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{52046ACB-938C-4067-9F14-205E9FF41382}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52046ACB-938C-4067-9F14-205E9FF41382}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52046ACB-938C-4067-9F14-205E9FF41382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{825D27E1-BE3F-47FB-B98B-32C6C3D431FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{825D27E1-BE3F-47FB-B98B-32C6C3D431FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{825D27E1-BE3F-47FB-B98B-32C6C3D431FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{825D27E1-BE3F-47FB-B98B-32C6C3D431FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
