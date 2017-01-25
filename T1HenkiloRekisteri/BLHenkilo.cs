@@ -37,11 +37,19 @@ namespace JAMK.IT
     {
       henkilot.Add(hlo);
     }
+    public void PoistaHenkilo(Henkilo hlo)
+    {
+      if (henkilot.Contains(hlo))
+      { 
+      henkilot.Remove(hlo);
+      }
+    }
     public Henkilo HaeHenkilo(int index)
     {
       if (index < henkilot.Count)
       {
-        return henkilot.ElementAt(index);
+        //return henkilot.ElementAt(index);
+        return henkilot[index];
       }
       else
       {

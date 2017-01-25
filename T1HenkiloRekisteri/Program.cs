@@ -25,11 +25,21 @@ namespace JAMK.IT.T1HenkiloRekisteri
       poppoo.LisaaHenkilo(hlo1);
       poppoo.LisaaHenkilo(hlo2);
 
-      //tulostetaan poppoo näytölle
+      //tulostetaan poppoo näytölle foreach
       foreach (Henkilo h in poppoo.Henkilolista)
       {
         Console.WriteLine("Henkilö {0}", h.ToString());
       }
+      //löytyykö Jussia poppoosta
+      Henkilo testi = new Henkilo { Etunimi = "Jussi", Sukunimi = "Pussinen", Hetu = "010199-001A" };
+      poppoo.PoistaHenkilo(testi);
+      //tulostetaan poppoo näytölle for loopilla
+      Console.WriteLine("Löytyy {0} henkilöä:", poppoo.Henkilolista.Count);
+      for (int i = 0; i < poppoo.Henkilolista.Count; i++)
+      {
+        Console.WriteLine("Henkilö {0}", poppoo.HaeHenkilo(i).ToString());
+      }
+
       //TODO kysy käyttäjältä  hetu ja haetaan sitä vastaava  henkilö näytölle
 
     }
