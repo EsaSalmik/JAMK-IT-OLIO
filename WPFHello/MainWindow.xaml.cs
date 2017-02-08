@@ -26,15 +26,16 @@ namespace WPFHello
     {
       InitializeComponent();
       cnt = 0;
-      textBlock1.Text = cnt.ToString();
+      txbCounter.Text = cnt.ToString();
     }
 
     private void button_Click(object sender, RoutedEventArgs e)
     {
-      textBlock.Text = "Hello " + textBox.Text;
-      MessageBox.Show("Terve " + textBox.Text, "Esa's Messut");
+      txbHello.Text = "Hello " + txtName.Text;
       cnt++;
-      textBlock1.Text = cnt.ToString();
+      txbCounter.Text = cnt.ToString();
+      //ilmoitus tilariville
+      txbMessages.Text = "Painoit buttosta btnSayHello";
     }
 
     private void button_Copy_Click(object sender, RoutedEventArgs e)

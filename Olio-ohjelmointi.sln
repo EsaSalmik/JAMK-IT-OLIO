@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaskinDemoTests", "LaskinDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFHello", "WPFHello\WPFHello.csproj", "{8C68508C-CF59-4BB1-A85A-AEAD982A6D78}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFPolyline", "WPFPolyline\WPFPolyline.csproj", "{B6D64966-AE49-4D88-8F93-03DB0D7A8780}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{8C68508C-CF59-4BB1-A85A-AEAD982A6D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C68508C-CF59-4BB1-A85A-AEAD982A6D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C68508C-CF59-4BB1-A85A-AEAD982A6D78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D64966-AE49-4D88-8F93-03DB0D7A8780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D64966-AE49-4D88-8F93-03DB0D7A8780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D64966-AE49-4D88-8F93-03DB0D7A8780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D64966-AE49-4D88-8F93-03DB0D7A8780}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

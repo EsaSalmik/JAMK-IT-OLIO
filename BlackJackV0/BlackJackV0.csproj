@@ -7,7 +7,7 @@
     <ProjectGuid>{C1062C23-0B47-4684-99B1-D18F27AC987F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BlackJackV0</RootNamespace>
+    <RootNamespace>JAMK.IT</RootNamespace>
     <AssemblyName>BlackJackV0</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

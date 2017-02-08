@@ -7,10 +7,24 @@
         mc:Ignorable="d"
         Title="Esa's First WPF App" Height="350" Width="525" FontSize="20">
     <Grid Background="#FF29A1B4">
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="44" Margin="27,24,0,0" TextWrapping="Wrap" Text="Anna nimesi" VerticalAlignment="Top" Width="191" SelectionBrush="#FF33FFD1"/>
-        <Button x:Name="button" Content="Tervehdi" HorizontalAlignment="Left" Margin="27,94,0,0" VerticalAlignment="Top" Width="191" Click="button_Click"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="27,178,0,0" TextWrapping="Wrap" Text="..." VerticalAlignment="Top" Width="191"/>
-        <Button x:Name="button_Copy" Content="About..." HorizontalAlignment="Left" Margin="27,130,0,0" VerticalAlignment="Top" Width="191" Click="button_Copy_Click"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="257,0,0,0" TextWrapping="Wrap" Text="##" VerticalAlignment="Top" FontSize="100"/>
+        <StackPanel Orientation="Horizontal" >
+            <StackPanel>
+                <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="44" Margin="10" TextWrapping="Wrap" Text="Anna nimesi" VerticalAlignment="Top" Width="191" SelectionBrush="#FF33FFD1"/>
+                <Button x:Name="btnSayHello" Content="Tervehdi" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="191" Click="button_Click"/>
+                <Button x:Name="btnAbout" Content="About..." HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="191" Click="button_Copy_Click"/>
+                <Button x:Name="btnExit" Content="Exit" Margin="10" />
+                <TextBlock x:Name="txbHello" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="..." VerticalAlignment="Top" Width="191"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock x:Name="txbCounter" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="##" VerticalAlignment="Top" FontSize="100"/>
+            </StackPanel>
+        </StackPanel>
+        <DockPanel VerticalAlignment="Bottom">
+            <StatusBar>
+                <StatusBarItem>
+                    <TextBlock x:Name="txbMessages" FontSize="12"/>
+                </StatusBarItem>
+            </StatusBar>
+        </DockPanel>
     </Grid>
 </Window>
