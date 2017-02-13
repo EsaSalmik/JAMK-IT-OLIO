@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,7 @@ namespace WPFPolyline
     public MainWindow()
     {
       InitializeComponent();
+      Debug.WriteLine("-------Alkakoon debuggaus''''''''");
     }
 
     private void btnDrawPolyline_Click(object sender, RoutedEventArgs e)
@@ -43,6 +45,7 @@ namespace WPFPolyline
       {
         x = rnd.Next((int)this.Width);
         y = rnd.Next((int)this.Height);
+        Debug.WriteLine(i.ToString(), x.ToString(), y.ToString());
         myPoints.Add(new Point(x, y));
       }
       pl.Points = myPoints;
