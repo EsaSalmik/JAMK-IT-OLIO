@@ -7,50 +7,62 @@
         xmlns:local="clr-namespace:WPFDataBindaus"
         mc:Ignorable="d"
         Title="DataBindDemo" Height="300" Width="580">
-    <Window.Resources>
-        <sys:String x:Key="MyAppName">Esan mahti sovellus V0.1</sys:String>
-        <x:Array x:Key="myBands" Type="sys:String">
-            <sys:String>AC DC</sys:String>
-            <sys:String>Whitesnake</sys:String>
-            <sys:String>Rolling Stones</sys:String>
-            <sys:String>The Eagles</sys:String>
-        </x:Array> 
-    </Window.Resources>
-    <Grid>
-        <StackPanel HorizontalAlignment="Left"   Width="auto" Orientation="Horizontal">
-            <!-- simppeli binding toiseen kontrolliin-->
-            <StackPanel Background="LimeGreen" Orientation="Vertical">
-                <TextBlock FontSize="14">Binding to element:</TextBlock>
-                <TextBox x:Name="txtTesti" Width="100" />
-                <TextBlock x:Name="txbTesti" Text="{Binding ElementName=txtTesti, Path=Text}"  />
-                <TextBlock x:Name="txbTesti2" Text="{Binding ElementName=txtTesti, Path=Text.Length}" />
-            </StackPanel>
-            <StackPanel Background="{Binding ElementName=cmbColors, Path=SelectedItem.Content, Mode=OneWay}" x:Name="spMiddle">
-                <TextBlock FontSize="14">Binding to static resource:</TextBlock>
-                <ComboBox x:Name="cmbColors">
-                    <ListBoxItem Content="Azure"/>
-                    <ListBoxItem Content="Blue"/>
-                    <ListBoxItem Content="Green"/>
-                    <ListBoxItem Content="Yellow"/>
-                    <ListBoxItem Content="LimeGreen"/>
-                </ComboBox>
-                <Separator Height="15" Background="blue" BorderThickness="0" />
-                <TextBlock Text="{Binding Source={StaticResource MyAppName}}" Foreground="Blue" />
-                <TextBlock Text="Valitse suosikkibändisi" />
-                <ComboBox x:Name="cmbBands" Width="200" ItemsSource="{Binding Source={StaticResource myBands}}" />
-                <TextBlock Text="valitse suosikki elokuvasi"/>
-                <ComboBox x:Name="cmbMovies" Width="200" />
-                <TextBlock Text="Valitse suosikkijoukkueesi (olio-kokoelma)" />
-                <ComboBox x:Name="cmbTeams" Width="200" />
-            </StackPanel>
-            <StackPanel x:Name="spRight" Background="Aquamarine">
-                <TextBlock FontSize="14">Binding to collection:</TextBlock>
-                <Button x:Name="btnBind" Content="Sido olio-kokoelmaan" Width="200" Click="btnBind_Click" />
-                <TextBox x:Name="txtName" Text="{Binding Path=Name}"/>
-                <TextBox x:Name="txtCity" Text="{Binding Path=City}" />
-                <Button x:Name="btnForward" Content="Seuraava" />
-                <Button x:Name="btnBackward" Content="Edellinen" />
-            </StackPanel>
+  <Window.Resources>
+    <sys:String x:Key="MyAppName">Esan mahti sovellus V0.1</sys:String>
+    <x:Array x:Key="myBands" Type="sys:String">
+      <sys:String>AC DC</sys:String>
+      <sys:String>Whitesnake</sys:String>
+      <sys:String>Rolling Stones</sys:String>
+      <sys:String>The Eagles</sys:String>
+    </x:Array>
+  </Window.Resources>
+  <Grid>
+    <StackPanel HorizontalAlignment="Left"   Width="auto" Orientation="Horizontal">
+      <!-- simppeli binding toiseen kontrolliin-->
+      <StackPanel Background="LimeGreen" Orientation="Vertical">
+        <TextBlock FontSize="14">Binding to element:</TextBlock>
+        <TextBox x:Name="txtTesti" Width="100" />
+        <TextBlock x:Name="txbTesti" Text="{Binding ElementName=txtTesti, Path=Text}"  />
+        <TextBlock x:Name="txbTesti2" Text="{Binding ElementName=txtTesti, Path=Text.Length}" />
+      </StackPanel>
+      <StackPanel Background="{Binding ElementName=cmbColors, Path=SelectedItem.Content, Mode=OneWay}" x:Name="spMiddle">
+        <TextBlock FontSize="14">Binding to static resource:</TextBlock>
+        <ComboBox x:Name="cmbColors">
+          <ListBoxItem Content="Azure"/>
+          <ListBoxItem Content="Blue"/>
+          <ListBoxItem Content="Green"/>
+          <ListBoxItem Content="Yellow"/>
+          <ListBoxItem Content="LimeGreen"/>
+        </ComboBox>
+        <Separator Height="15" Background="blue" BorderThickness="0" />
+        <TextBlock Text="{Binding Source={StaticResource MyAppName}}" Foreground="Blue" />
+        <TextBlock Text="Valitse suosikkibändisi" />
+        <ComboBox x:Name="cmbBands" Width="200" ItemsSource="{Binding Source={StaticResource myBands}}" />
+        <TextBlock Text="valitse suosikki elokuvasi"/>
+        <ComboBox x:Name="cmbMovies" Width="200" />
+        <TextBlock Text="Valitse suosikkijoukkueesi (olio-kokoelma)" />
+        <ComboBox x:Name="cmbTeams" Width="200" />
+      </StackPanel>
+      <StackPanel x:Name="spRight" Background="Aquamarine">
+        <TextBlock FontSize="14">Binding to collection:</TextBlock>
+        <Button x:Name="btnBind" Content="Sido olio-kokoelmaan" Width="200" Click="btnBind_Click" />
+        <TextBox x:Name="txtName" Text="{Binding Path=Name}"/>
+        <TextBox x:Name="txtCity" Text="{Binding Path=City}" />
+        <Button x:Name="btnForward" Content="Seuraava" />
+        <Button x:Name="btnBackward" Content="Edellinen" />
+        <Separator Height="15" Background="blue" BorderThickness="0" />
+        <TextBlock Text="uuden joukkueen lisäys:"></TextBlock>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock>- nimi:</TextBlock>
+          <TextBox Width="120"></TextBox>
         </StackPanel>
-    </Grid>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock>- kaupunki:</TextBlock>
+          <TextBox Width="120"></TextBox>
+        </StackPanel>
+        <Button x:Name="btnCreateNew" Content="Lisää joukkue liigaan"></Button>
+        
+      </StackPanel>
+    </StackPanel>
+  </Grid>
 </Window>
