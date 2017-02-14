@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFPolyline", "WPFPolyline\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDataBindaus", "WPFDataBindaus\WPFDataBindaus.csproj", "{80B7D513-E30F-4D9A-9EF5-7FF176218F5F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo06T1", "Demo06T1\Demo06T1.csproj", "{BE766C57-4284-45E1-B380-7554680C0D5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{80B7D513-E30F-4D9A-9EF5-7FF176218F5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80B7D513-E30F-4D9A-9EF5-7FF176218F5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80B7D513-E30F-4D9A-9EF5-7FF176218F5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE766C57-4284-45E1-B380-7554680C0D5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE766C57-4284-45E1-B380-7554680C0D5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE766C57-4284-45E1-B380-7554680C0D5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE766C57-4284-45E1-B380-7554680C0D5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
