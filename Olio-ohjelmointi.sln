@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVMDemo", "MVVMDemo\MVVMDe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IODemo", "IODemo\IODemo.csproj", "{1236D21F-8F54-4E34-927B-16DFD043D8DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YksikkoTestausDemo", "YksikkoTestausDemo\YksikkoTestausDemo.csproj", "{427D5A62-AE16-403D-9105-A297B7DA9104}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YksikkoTestausDemoTests", "YksikkoTestausDemoTests\YksikkoTestausDemoTests.csproj", "{AAD89FD0-D992-4A51-BC6E-7541285375D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{1236D21F-8F54-4E34-927B-16DFD043D8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1236D21F-8F54-4E34-927B-16DFD043D8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1236D21F-8F54-4E34-927B-16DFD043D8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{427D5A62-AE16-403D-9105-A297B7DA9104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427D5A62-AE16-403D-9105-A297B7DA9104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427D5A62-AE16-403D-9105-A297B7DA9104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427D5A62-AE16-403D-9105-A297B7DA9104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD89FD0-D992-4A51-BC6E-7541285375D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD89FD0-D992-4A51-BC6E-7541285375D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD89FD0-D992-4A51-BC6E-7541285375D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD89FD0-D992-4A51-BC6E-7541285375D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
