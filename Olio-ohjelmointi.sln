@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFirstWPF", "MyFirstWPF\My
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeWPF", "SnakeWPF\SnakeWPF.csproj", "{CCD3A13D-28AB-4BFE-BBCC-FFC7DA539C3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFShoppingList", "WPFShoppingList\WPFShoppingList.csproj", "{1E1E1C31-B313-442B-9FF6-143D2CF008E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{CCD3A13D-28AB-4BFE-BBCC-FFC7DA539C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCD3A13D-28AB-4BFE-BBCC-FFC7DA539C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCD3A13D-28AB-4BFE-BBCC-FFC7DA539C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E1E1C31-B313-442B-9FF6-143D2CF008E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E1E1C31-B313-442B-9FF6-143D2CF008E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E1E1C31-B313-442B-9FF6-143D2CF008E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E1E1C31-B313-442B-9FF6-143D2CF008E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
