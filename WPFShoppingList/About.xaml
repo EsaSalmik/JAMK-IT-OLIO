@@ -5,13 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFShoppingList"
         mc:Ignorable="d"
-        Title="About" Height="300" Width="300">
-    <Grid>
+        Title="About" Height="300" Width="400">
+    <Grid x:Name="myGrid">
         <TextBlock x:Name="textBlock" FontSize="18" 
-                   HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" 
+                   HorizontalAlignment="Left" Margin="20" 
+                   TextWrapping="Wrap" 
                    Text="Proudly programmed by Esa and co"
-                   VerticalAlignment="Top" Width="262"/>
-        <Button x:Name="button" Content="Close" HorizontalAlignment="Left" Margin="70,138,0,0" VerticalAlignment="Top" Width="145" Click="button_Click"/>
+                   VerticalAlignment="Top" />
+        <Button x:Name="button" Content="Close" 
+                Margin="20,60"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top" Click="button_Click"/>
+    <Slider x:Name="slider" HorizontalAlignment="Left" Margin="20,100,10,0" 
+            VerticalAlignment="Top" Width="{Binding ElementName=myGrid, Path=ActualWidth}"
+            Maximum="100" SmallChange="0" TickFrequency="10" Minimum="10" />
+    <TextBox x:Name="txtValue" HorizontalAlignment="Left" VerticalAlignment="Top" 
+             Height="100" Margin="20,120,0,0"  
+             Text="{Binding ElementName=slider, Path=Value}"  
+             FontSize="{Binding ElementName=slider, Path=Value}" 
+             Width="{Binding ElementName=slider, Path=Value*10}" 
+             Background="Aquamarine" />
 
-    </Grid>
+  </Grid>
 </Window>
