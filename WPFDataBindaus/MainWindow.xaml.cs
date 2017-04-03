@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using JAMK.IT;
 namespace WPFDataBindaus
 {
   /// <summary>
@@ -20,13 +20,26 @@ namespace WPFDataBindaus
   /// </summary>
   public partial class MainWindow : Window
   {
+    private int MyHappiness;
+    private Animal elukka;
     public string AppName { get; set; }
     
     public MainWindow()
     {
       InitializeComponent();
+      elukka = new JAMK.IT.Animal();
+      elukka.Name = "Hevonen";
+      pgbAnimal.DataContext = elukka;
       AppName = "Voi pojat mikä sovellus!";
       textBlock2.DataContext = this;
+    }
+
+    private void btnAdd_Click(object sender, RoutedEventArgs e)
+    {
+      MyHappiness++;
+      //tämä toimii
+      //pgbAnimal.Value = MyHappiness;
+      elukka.Happiness++;
     }
   }
 }

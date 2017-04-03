@@ -14,6 +14,9 @@
             <TextBlock x:Name="textBlock2" Text="{Binding AppName}" FontSize="24" />
             <Slider x:Name="slider" Maximum="100" LargeChange="10" SmallChange="1"/>
             <ProgressBar x:Name="progressBar" Value="{Binding Value, ElementName=slider}"/>
+            <TextBlock>Animaalinen onnellisuus</TextBlock>
+            <ProgressBar x:Name="pgbAnimal" Value="{Binding Happiness}" Foreground="CadetBlue" Background="Salmon" Height="20"/>
+            <Button x:Name="btnAdd" Content="Add happiness" Click="btnAdd_Click"    />
             <TextBlock x:Name="textBlock" Text="{Binding Value, ElementName=slider}" FontSize="18"/>
             <TextBox x:Name="textBox" Text="{Binding Value, ElementName=slider, Mode=TwoWay}" FontSize="24" />
         </StackPanel>
