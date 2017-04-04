@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPFSliderDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSliderDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid x:Name="myGrid">
+        <Slider x:Name="slider" HorizontalAlignment="Left" Margin="10,10,-10,0" 
+                VerticalAlignment="Top" 
+                Maximum="50" Minimum="10" TickFrequency="10"
+                Width="{Binding ElementName=myGrid, Path=ActualWidth}"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" 
+                 Height="50" Margin="10,33,0,0" 
+                 Text="{Binding ElementName=slider, Path=Value}" 
+                 FontSize="{Binding ElementName=slider,Path=Value}"
+                 Width="{Binding ElementName=slider,Path=Value*10}"
+                 VerticalAlignment="Top"/>
+        <ProgressBar x:Name="MyProgressBar" HorizontalAlignment="Left" Height="20" Margin="10,80"
+                     VerticalAlignment="Top" Width="500" Value="{Binding Path=Happiness}"/>
+        <Button x:Name="button" Content="Add happiness" 
+                HorizontalAlignment="Left" Margin="10,103,0,0" 
+                VerticalAlignment="Top" Width="150" Click="button_Click"/>
+        <Button x:Name="btnCreate" Content="Luo uusi olio" Margin="10,130" Click="btnCreate_Click" />
+        <TextBlock x:Name="tbAnimal" FontSize="20" Foreground="Blue"
+                   Text="{Binding Path=Name}" Margin="10,200,7,63" Width="500" />
+    </Grid>
+</Window>

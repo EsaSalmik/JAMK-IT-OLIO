@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFShoppingList", "WPFShopp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLDemo2", "XMLDemo2\XMLDemo2.csproj", "{B160A400-2900-4203-971F-C2AF33F0740F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFSliderDemo", "WPFSliderDemo\WPFSliderDemo.csproj", "{1680CA0D-1B4E-4421-8A5F-BFF4E67A17FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{B160A400-2900-4203-971F-C2AF33F0740F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B160A400-2900-4203-971F-C2AF33F0740F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B160A400-2900-4203-971F-C2AF33F0740F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1680CA0D-1B4E-4421-8A5F-BFF4E67A17FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1680CA0D-1B4E-4421-8A5F-BFF4E67A17FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1680CA0D-1B4E-4421-8A5F-BFF4E67A17FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1680CA0D-1B4E-4421-8A5F-BFF4E67A17FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
