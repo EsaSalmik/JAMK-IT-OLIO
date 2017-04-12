@@ -12,6 +12,7 @@
                 <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="44" Margin="10" TextWrapping="Wrap" Text="Anna nimesi" VerticalAlignment="Top" Width="191" SelectionBrush="#FF33FFD1"/>
                 <Button x:Name="btnSayHello" Content="Tervehdi" HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="191" Click="button_Click"/>
                 <Button x:Name="btnAbout" Content="About..." HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="191" Click="button_Copy_Click"/>
+                <Button x:Name="btnSecond" Content="Second..." HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Width="191" Click="btnSecond_Click"/>
                 <Button x:Name="btnExit" Content="Exit" Margin="10" />
                 <TextBlock x:Name="txbHello" HorizontalAlignment="Left" Margin="10" TextWrapping="Wrap" Text="..." VerticalAlignment="Top" Width="191"/>
             </StackPanel>

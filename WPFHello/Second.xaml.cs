@@ -14,25 +14,28 @@ using System.Windows.Shapes;
 
 namespace WPFHello
 {
+
   /// <summary>
-  /// Interaction logic for About.xaml
+  /// Interaction logic for Second.xaml
   /// </summary>
-  public partial class About : Window
+  public partial class Second : Window
   {
-    public About()
+    //ominaisuus
+    private string username;
+    public string UserName
     {
-      InitializeComponent();
-      ShowName("no name is given");
+      get { return username; }
+      set { username = value; }
     }
-    public About(string nimi)
+    public Second()
     {
       InitializeComponent();
-      ShowName(nimi);
+      tbMessage.Text = "username is now : " + username;
     }
 
-    private void ShowName(string nimi)
+    private void btnSay_Click(object sender, RoutedEventArgs e)
     {
-      tbName.Text = nimi;
+      tbMessage.Text = "Hello: " + username;
     }
   }
 }

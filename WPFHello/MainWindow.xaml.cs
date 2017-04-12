@@ -40,11 +40,24 @@ namespace WPFHello
 
     private void button_Copy_Click(object sender, RoutedEventArgs e)
     {
+      //käyttäjän nimi
+      string nahmen = txtName.Text;
       //kutsutaan näkyviin About -niminen ikkuna
       About aboutWin = new WPFHello.About();
       //huom ikkuna voi olla joko modaalinen tai tavallinen
       //aboutWin.ShowDialog(); //modaalinen
       aboutWin.Show();
+      //ja sitten uudestaan
+      About aw2 = new WPFHello.About("Jack Russell");
+      aw2.ShowDialog();
+    }
+
+    private void btnSecond_Click(object sender, RoutedEventArgs e)
+    {
+      //kutsutaan uutta ikkunaa
+      Second swin = new Second();
+      swin.UserName = "Jack Russell";
+      swin.ShowDialog();
     }
   }
 }

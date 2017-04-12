@@ -48,5 +48,11 @@ namespace WPFSliderDemo
       MyProgressBar.DataContext = kissa;
       tbAnimal.DataContext = kissa;
     }
-  }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainWindow win = new WPFSliderDemo.MainWindow();
+            win.Show();
+        }
+    }
 }
